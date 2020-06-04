@@ -44,9 +44,9 @@ const mergeThemeVars = (componentThemeVars, componentVariants) => (componentStyl
  * to the factory function must be for the same component as the theme variables
  * and variants passed to this function.
  */
-const genStyledFunctionFactory = (themeVars, themeVariants) => (componentStyleApi) => {
+const genStyledFunctionFactory = (themeVars, themeVariants) => (componentStyleApi, styledFunc = styled) => {
 	const newStyledFunc = (key) => (...args) => {
-		return (styled[key] || styled(key)).attrs((props) =>
+		return (styledFunc[key] || styledFunc(key)).attrs((props) =>
 			mergeThemeVars(themeVars, themeVariants)(componentStyleApi, props)
 		)(...args)
 	}

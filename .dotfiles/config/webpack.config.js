@@ -35,7 +35,7 @@ module.exports = function(webpackEnv) {
 			libraryTarget: 'commonjs2',
 		},
 		devtool: isEnvProduction ? (shouldUseSourceMap ? 'source-map' : false) : 'cheap-module-source-map',
-		externals: [webpackNodeExternals()],
+		externals: [webpackNodeExternals(), 'react', 'react-dom', 'styled-components', '@xstyled/core', '@xstyled/styled-components'],
 		optimization: {
 			minimize: isEnvProduction,
 			minimizer: [
@@ -168,5 +168,3 @@ module.exports = function(webpackEnv) {
 		},
 	}
 }
-
-	
