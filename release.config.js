@@ -1,5 +1,5 @@
 const release = require('./.dotfiles/release')
 
 module.exports = Object.assign(release, {
-	repositoryUrl: 'https://auth@bitbucket.org/lajavaness/xstyled-theme-utils.git',
+	repositoryUrl: 'git@github.com:La-Javaness/xstyled-theme-utils.git',
 })
