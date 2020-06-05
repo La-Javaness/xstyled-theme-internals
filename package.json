@@ -1,7 +1,7 @@
 {
 	"name": "@xstyled-theme/utils",
 	"version": "0.3.0",
-	"description": "Utilities used by xstyled-theme themes to provide a styled-components function to theme consumers",
+	"description": "Utilities used internally by xstyled-theme themes to share code and have access to dependencies",
 	"homepage": "/",
 	"license": "MIT",
 	"author": "La Javaness <dev@lajavaness.com>",
@@ -31,7 +31,10 @@
 		"typescript": "3.7"
 	},
 	"dependencies": {
-		"@babel/runtime": "^7.10.1"
+		"@babel/runtime": "^7.10.1",
+		"@babel/preset-env": "^7.10.2",
+		"@babel/preset-typescript": "^7.10.1",
+		"babel-loader": "^8.1.0"
 	},
 	"devDependencies": {
 		"@babel/core": "^7.10.1",
@@ -40,8 +43,6 @@
 		"@babel/plugin-proposal-object-rest-spread": "^7.9.6",
 		"@babel/plugin-transform-runtime": "^7.10.1",
 		"@babel/polyfill": "^7.10.1",
-		"@babel/preset-env": "^7.10.1",
-		"@babel/preset-typescript": "^7.9.0",
 		"@babel/types": "^7.10.0",
 		"@commitlint/cli": "^8.3.5",
 		"@commitlint/config-conventional": "^8.3.4",
@@ -55,7 +56,6 @@
 		"@xstyled/styled-components": "^1.17.1",
 		"@xstyled/system": "^1.17.1",
 		"babel-jest": "^26.0.1",
-		"babel-loader": "^8.1.0",
 		"babel-plugin-styled-components": "^1.10.7",
 		"browserslist": "^4.12.0",
 		"case-sensitive-paths-webpack-plugin": "^2.3.0",
