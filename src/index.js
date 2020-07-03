@@ -1,3 +1,4 @@
+import 'core-js'
 import styled from '@xstyled/styled-components'
 
 /**
