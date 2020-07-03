@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/La-Javaness/xstyled-theme-internals/compare/v1.0.0...v1.0.1) (2020-07-03)
+
+
+### Bug Fixes
+
+* Update registry to point to the public NPM registry ([c55f720](https://github.com/La-Javaness/xstyled-theme-internals/commit/c55f720ce67d2cc6a0150d67f91e2af021a3359d))
+
 # 1.0.0 (2020-07-03)
 
 
