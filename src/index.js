@@ -13,9 +13,9 @@ import styled from '@xstyled/styled-components'
  * or in themes. Besides, we need props to compute the variants to apply to a
  * component instance, so the resulting function takes props as a second parameter.
  *
- * @param  {Object} componentThemeVars The theme's declarations for the component
- * @param  {Object} componentVariants  Component variants defined in the theme
- * @return {Function} A function that merges all style variables based on a
+ * @param   {object} componentThemeVars The theme's declarations for the component.
+ * @param   {object} componentVariants  Component variants defined in the theme.
+ * @returns {Function} A function that merges all style variables based on a
  * component API and component instance's props.
  */
 const mergeThemeVars = (componentThemeVars, componentVariants) => (componentStyleApi, props) => {
@@ -37,9 +37,9 @@ const mergeThemeVars = (componentThemeVars, componentVariants) => (componentStyl
  * intended for use by generated code inside xstyled-theme themes. It needs to be
  * instantiated with a component style API provided by the component's developer
  * in order to produce a `styled`-like function with the theme variables injected.
- * @param  {Object} themeVars         The theme variables for a component.
- * @param  {Object} themeVariants     The theme variants for a component.
- * @return {Function} A factory for functions with the same API as xstyled's
+ * @param  {object} themeVars         The theme variables for a component.
+ * @param  {object} themeVariants     The theme variants for a component.
+ * @returns {Function} A factory for functions with the same API as xstyled's
  * `styled` function, which can be instantiated by providing a theme API for a
  * component. An implicit constraint must be respected: the component API passed
  * to the factory function must be for the same component as the theme variables
