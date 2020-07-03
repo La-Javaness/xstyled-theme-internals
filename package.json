@@ -9,6 +9,21 @@
 	"files": [
 		"build"
 	],
+	"repository": {
+		"type": "git",
+		"url": "git@github.com:La-Javaness/xstyled-theme-config.git"
+	},
+	"keywords": [
+		"xstyled-theme",
+		"xstyled",
+		"theme",
+		"styled-components",
+		"designops"
+	],
+	"bugs": {
+		"url": "https://github.com/La-Javaness/xstyled-theme-config/issues"
+	},
+	"homepage": "https://github.com/La-Javaness/xstyled-theme-config#readme",
 	"scripts": {
 		"build": "node scripts/build.js",
 		"build:ci": "cross-env CI=true yarn build:prod",
@@ -111,6 +126,7 @@
 		"styled-components": "^4.4.1"
 	},
 	"publishConfig": {
-		"registry": "https://npm.lajavaness.com"
+		"registry": "https://npm.lajavaness.com",
+		"access": "public"
 	}
 }
